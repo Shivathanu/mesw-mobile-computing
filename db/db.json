@@ -50,7 +50,7 @@
       "arrivalTime": "08:05",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 2,
@@ -61,7 +61,7 @@
       "arrivalTime": "08:15",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 3,
@@ -72,7 +72,7 @@
       "arrivalTime": "08:25",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 4,
@@ -83,7 +83,7 @@
       "arrivalTime": "08:35",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 5,
@@ -94,7 +94,7 @@
       "arrivalTime": "08:15",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 6,
@@ -105,7 +105,7 @@
       "arrivalTime": "08:25",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 7,
@@ -116,7 +116,7 @@
       "arrivalTime": "08:35",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 8,
@@ -127,7 +127,7 @@
       "arrivalTime": "08:45",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 9,
@@ -138,7 +138,7 @@
       "arrivalTime": "08:20",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 10,
@@ -149,7 +149,7 @@
       "arrivalTime": "08:30",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 11,
@@ -160,7 +160,7 @@
       "arrivalTime": "08:40",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 12,
@@ -171,7 +171,7 @@
       "arrivalTime": "08:50",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 13,
@@ -182,7 +182,7 @@
       "arrivalTime": "09:05",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 14,
@@ -193,7 +193,7 @@
       "arrivalTime": "09:15",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 15,
@@ -204,7 +204,7 @@
       "arrivalTime": "09:25",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 16,
@@ -215,7 +215,7 @@
       "arrivalTime": "09:35",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 17,
@@ -226,7 +226,7 @@
       "arrivalTime": "09:45",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 18,
@@ -237,7 +237,7 @@
       "arrivalTime": "09:55",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 19,
@@ -248,7 +248,7 @@
       "arrivalTime": "10:05",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 20,
@@ -259,7 +259,7 @@
       "arrivalTime": "10:15",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 21,
@@ -270,7 +270,7 @@
       "arrivalTime": "10:25",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 22,
@@ -281,7 +281,7 @@
       "arrivalTime": "10:35",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 23,
@@ -292,7 +292,7 @@
       "arrivalTime": "10:45",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 24,
@@ -303,7 +303,7 @@
       "arrivalTime": "10:55",
       "distanceKm": 5,
       "stopDurationMin": 5,
-      "price": "1,6"
+      "price": "1.6"
     }
   ],
   "ticket": [
@@ -316,7 +316,7 @@
       "departureTime": "08:00",
       "arrivalStation": 2,
       "arrivalTime": "08:05",
-      "price": "1,60"
+      "price": "1.60"
     },
     {
       "id": 2,
@@ -327,7 +327,7 @@
       "departureTime": "08:00",
       "arrivalStation": 3,
       "arrivalTime": "08:15",
-      "price": "3,20"
+      "price": "3.20"
     },
     {
       "id": 3,
@@ -338,7 +338,7 @@
       "departureTime": "08:00",
       "arrivalStation": 5,
       "arrivalTime": "08:35",
-      "price": "6,40"
+      "price": "6.40"
     }
   ]
 }
