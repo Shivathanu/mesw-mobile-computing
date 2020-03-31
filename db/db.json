@@ -1,0 +1,344 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "lastName": "lastname 01",
+      "firstName": "firstname 01",
+      "email": "firstname01.lastname01@email.com",
+      "password": "hash01",
+      "phone": "111111111",
+      "credicard": {
+        "type": "CREDIT",
+        "number": "111111111111",
+        "validity": "01/2021"
+      }
+    },
+    {
+      "id": 2,
+      "lastName": "lastname 02",
+      "firstName": "firstname 02",
+      "email": "firstname02.lastname02@email.com",
+      "password": "hash02",
+      "phone": "222222222",
+      "credicard": {
+        "type": "CREDIT",
+        "number": "222222222222",
+        "validity": "02/2021"
+      }
+    },
+    {
+      "id": 3,
+      "lastName": "lastname 03",
+      "firstName": "firstname 03",
+      "email": "firstname03.lastname03@email.com",
+      "password": "hash03",
+      "phone": "333333333",
+      "credicard": {
+        "type": "CREDIT",
+        "number": "333333333333",
+        "validity": "03/2021"
+      }
+    }
+  ],
+  "route": [
+    {
+      "id": 1,
+      "train": 1,
+      "departureStation": 1,
+      "departureTime": "08:00",
+      "arrivalStation": 2,
+      "arrivalTime": "08:05",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 2,
+      "train": 1,
+      "departureStation": 2,
+      "departureTime": "08:10",
+      "arrivalStation": 3,
+      "arrivalTime": "08:15",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 3,
+      "train": 1,
+      "departureStation": 3,
+      "departureTime": "08:20",
+      "arrivalStation": 4,
+      "arrivalTime": "08:25",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 4,
+      "train": 1,
+      "departureStation": 4,
+      "departureTime": "08:30",
+      "arrivalStation": 5,
+      "arrivalTime": "08:35",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 5,
+      "train": 2,
+      "departureStation": 1,
+      "departureTime": "08:10",
+      "arrivalStation": 2,
+      "arrivalTime": "08:15",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 6,
+      "train": 2,
+      "departureStation": 2,
+      "departureTime": "08:20",
+      "arrivalStation": 3,
+      "arrivalTime": "08:25",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 7,
+      "train": 2,
+      "departureStation": 3,
+      "departureTime": "08:30",
+      "arrivalStation": 4,
+      "arrivalTime": "08:35",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 8,
+      "train": 2,
+      "departureStation": 4,
+      "departureTime": "08:40",
+      "arrivalStation": 5,
+      "arrivalTime": "08:45",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 9,
+      "train": 3,
+      "departureStation": 1,
+      "departureTime": "08:15",
+      "arrivalStation": 2,
+      "arrivalTime": "08:20",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 10,
+      "train": 3,
+      "departureStation": 2,
+      "departureTime": "08:25",
+      "arrivalStation": 3,
+      "arrivalTime": "08:30",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 11,
+      "train": 3,
+      "departureStation": 3,
+      "departureTime": "08:35",
+      "arrivalStation": 4,
+      "arrivalTime": "08:40",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 12,
+      "train": 3,
+      "departureStation": 4,
+      "departureTime": "08:45",
+      "arrivalStation": 5,
+      "arrivalTime": "08:50",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 13,
+      "train": 1,
+      "departureStation": 5,
+      "departureTime": "09:00",
+      "arrivalStation": 4,
+      "arrivalTime": "09:05",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 14,
+      "train": 1,
+      "departureStation": 4,
+      "departureTime": "09:10",
+      "arrivalStation": 3,
+      "arrivalTime": "09:15",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 15,
+      "train": 1,
+      "departureStation": 3,
+      "departureTime": "09:20",
+      "arrivalStation": 2,
+      "arrivalTime": "09:25",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 16,
+      "train": 1,
+      "departureStation": 2,
+      "departureTime": "09:30",
+      "arrivalStation": 1,
+      "arrivalTime": "09:35",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 17,
+      "train": 2,
+      "departureStation": 5,
+      "departureTime": "09:40",
+      "arrivalStation": 4,
+      "arrivalTime": "09:45",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 18,
+      "train": 2,
+      "departureStation": 4,
+      "departureTime": "09:50",
+      "arrivalStation": 3,
+      "arrivalTime": "09:55",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 19,
+      "train": 2,
+      "departureStation": 3,
+      "departureTime": "10:00",
+      "arrivalStation": 2,
+      "arrivalTime": "10:05",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 20,
+      "train": 2,
+      "departureStation": 2,
+      "departureTime": "10:10",
+      "arrivalStation": 1,
+      "arrivalTime": "10:15",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 21,
+      "train": 3,
+      "departureStation": 5,
+      "departureTime": "10:20",
+      "arrivalStation": 4,
+      "arrivalTime": "10:25",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 22,
+      "train": 3,
+      "departureStation": 4,
+      "departureTime": "10:30",
+      "arrivalStation": 3,
+      "arrivalTime": "10:35",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 23,
+      "train": 3,
+      "departureStation": 3,
+      "departureTime": "10:40",
+      "arrivalStation": 2,
+      "arrivalTime": "10:45",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    },
+    {
+      "id": 24,
+      "train": 3,
+      "departureStation": 2,
+      "departureTime": "10:50",
+      "arrivalStation": 1,
+      "arrivalTime": "10:55",
+      "distanceKm": 5,
+      "stopDurationMin": 5,
+      "price": "1,6"
+    }
+  ],
+  "ticket": [
+    {
+      "id": 1,
+      "uuid": "uuid-1111-1111-1111",
+      "user": 1,
+      "train": 1,
+      "departureStation": 1,
+      "departureTime": "08:00",
+      "arrivalStation": 2,
+      "arrivalTime": "08:05",
+      "price": "1,60"
+    },
+    {
+      "id": 2,
+      "uuid": "uuid-2222-2222-2222",
+      "user": 2,
+      "train": 1,
+      "departureStation": 1,
+      "departureTime": "08:00",
+      "arrivalStation": 3,
+      "arrivalTime": "08:15",
+      "price": "3,20"
+    },
+    {
+      "id": 3,
+      "uuid": "uuid-3333-3333-3333",
+      "user": 3,
+      "train": 1,
+      "departureStation": 1,
+      "departureTime": "08:00",
+      "arrivalStation": 5,
+      "arrivalTime": "08:35",
+      "price": "6,40"
+    }
+  ]
+}
