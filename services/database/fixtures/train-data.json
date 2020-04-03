@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "model": "train 01",
+        "max_capacity": "10"
+    },
+    {
+        "id": "2",
+        "model": "train 02",
+        "max_capacity": "5"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "short_name": "COI",
+        "name": "Coimbra"
+    },
+    {
+        "id": 2,
+        "short_name": "OPO",
+        "name": "Porto"
+    }
+]

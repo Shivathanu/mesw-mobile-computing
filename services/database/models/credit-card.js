@@ -1,9 +1,9 @@
 /**
- * User Model
+ * Credit Card Model
  */
 module.exports = function(sequelize, DataTypes) {
-	var User = sequelize.define(
-		"User",
+	var CreditCard = sequelize.define(
+		"credit_card",
 		{
 			id: {
 				type: DataTypes.INTEGER,
@@ -11,32 +11,23 @@ module.exports = function(sequelize, DataTypes) {
 				primaryKey: true,
 				autoIncrement: true
 			},
-			name: {
+			userId: {
+				type: DataTypes.STRING(255),
+            	allowNull: false
+			},
+			type: {
 				type: DataTypes.STRING(60),
 				allowNull: false
 			},
-			password: {
-				type: DataTypes.STRING(255),
+			number: {
+				type: DataTypes.STRING(60),
 				allowNull: false
 			},
-			address: {
-				type: DataTypes.INTEGER
-			},
-			dateOfBirth: {
-				type: DataTypes.DATE
-			},
-			nationality: {
-				type: DataTypes.STRING
-			},
-			email: {
+			validity: {
 				type: DataTypes.STRING(80),
 				allowNull: false
-			},
-			phoneNumber: {
-				type: DataTypes.STRING(15),
-				allowNull: true
-			},
-			createTime: {
+            },
+            createTime: {
 				type: DataTypes.DATE,
 				allowNull: false,
 				defaultValue: DataTypes.NOW
@@ -48,10 +39,16 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		{
 			freezeTableName: true,
-			tableName: "User",
+			tableName: "credit_card",
 			timestamps: false
 		}
 	);
 
-	return User;
+	models.CreditCard.belongsTo(models.User, {
+		as: 'userCreditCard',
+		foreignKey: 'userId',
+		foreignKeyConstraint: true,
+	});
+
+	return CreditCard;
 };

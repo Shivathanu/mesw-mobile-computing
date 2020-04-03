@@ -3,7 +3,7 @@ var path = require("path");
 var lodash = require("lodash");
 var Sequelize = require("sequelize");
 var basename = path.basename(__filename);
-var dbConfig = require("../../config/datasources");
+var dbConfig = require("../config/datasources");
 var db = {};
 
 const sequelize = new Sequelize(
