@@ -1,7 +1,7 @@
 {
   "user": [
     {
-      "id": 1,
+      "id": "1",
       "lastName": "lastname 01",
       "firstName": "firstname 01",
       "email": "firstname01.lastname01@email.com",
@@ -14,7 +14,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "lastName": "lastname 02",
       "firstName": "firstname 02",
       "email": "firstname02.lastname02@email.com",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "lastName": "lastname 03",
       "firstName": "firstname 03",
       "email": "firstname03.lastname03@email.com",
@@ -38,6 +38,27 @@
         "number": "333333333333",
         "validity": "03/2021"
       }
+    },
+    {
+      "id": "999",
+      "lastName": "lastname 999",
+      "firstName": "firstname 999",
+      "email": "firstname999.lastname999@email.com",
+      "password": "hash999",
+      "phone": "999999999",
+      "credicard": {
+        "type": "CREDIT",
+        "number": "99999999999",
+        "validity": "01/2021"
+      }
+    },
+    {
+      "email": "email@email.com",
+      "firstName": "first",
+      "id": "c28ca913-7354-4a02-8182-c7801fb511a8",
+      "lastName": "first",
+      "password": "123456",
+      "phone": "+351 123456"
     }
   ],
   "route": [
