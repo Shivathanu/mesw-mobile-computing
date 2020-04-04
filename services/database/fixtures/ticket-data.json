@@ -2,19 +2,19 @@
     {
         "id": 1,
         "uuid": "uuid-1111-1111-1111",
-        "user": 1,
-        "train": 1
+        "train": 1,
+        "verified": true
     },
     {
         "id": 2,
         "uuid": "uuid-1111-1111-1111",
-        "user": 1,
-        "train": 1
+        "train": 1,
+        "verified": true
     },
     {
         "id": 3,
         "uuid": "uuid-1111-1111-1111",
-        "user": 1,
-        "train": 1
+        "train": 1,
+        "verified": true
     }
 ]

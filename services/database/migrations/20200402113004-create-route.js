@@ -6,40 +6,40 @@ module.exports = {
 				type: Sequelize.INTEGER,
 				autoIncrement: true,
 				primaryKey: true,
-				allowNull: false
+				allowNull: false,
 			},
 			departure_station: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			departure_time: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			arrival_station: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			arrival_time: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			distance: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
-			stop_duration: {
-				type: Sequelize.INTEGER
-            },
+			stop_duration_min: {
+				type: Sequelize.INTEGER,
+			},
 			price: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			create_time: {
 				allowNull: false,
 				defaultValue: new Date(),
-				type: Sequelize.DATE
+				type: Sequelize.DATE,
 			},
 			update_time: {
-				type: Sequelize.DATE
+				type: Sequelize.DATE,
 			},
 			delete_time: {
-				type: Sequelize.DATE
-			}
+				type: Sequelize.DATE,
+			},
 		});
 	},
 	down: function(queryInterface, Sequelize) {

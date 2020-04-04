@@ -3,36 +3,31 @@
  */
 module.exports = function(sequelize, DataTypes) {
 	var Ticket = sequelize.define(
-		"ticket",
+		"Ticket",
 		{
 			id: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
 				primaryKey: true,
-				autoIncrement: true
+				autoIncrement: true,
 			},
 			uuid: {
 				type: DataTypes.UUIDV4,
-				allowNull: false
-			},
-			createTime: {
-				type: DataTypes.DATE,
 				allowNull: false,
-				defaultValue: DataTypes.NOW
 			},
-			updateTime: {
-				type: DataTypes.DATE,
-				allowNull: true
+			train: {
+				type: DataTypes.INTEGER,
+				allowNull: false,
 			},
-			deleteTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			}
+			verified: {
+				type: DataTypes.BOOLEAN,
+				allowNull: false,
+			},
 		},
 		{
 			freezeTableName: true,
-			tableName: "users",
-			timestamps: false
+			tableName: "ticket",
+			timestamps: false,
 		}
 	);
 

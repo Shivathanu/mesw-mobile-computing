@@ -6,35 +6,38 @@ module.exports = {
 				type: Sequelize.INTEGER,
 				autoIncrement: true,
 				primaryKey: true,
-				allowNull: false
+				allowNull: false,
 			},
 			first_name: {
 				type: Sequelize.STRING,
-				allowNull: false
+				allowNull: false,
 			},
 			last_name: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			email: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			password: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			phone: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
+			},
+			credit_card: {
+				type: Sequelize.INTEGER,
 			},
 			create_time: {
 				allowNull: false,
 				defaultValue: new Date(),
-				type: Sequelize.DATE
+				type: Sequelize.DATE,
 			},
 			update_time: {
-				type: Sequelize.DATE
+				type: Sequelize.DATE,
 			},
 			delete_time: {
-				type: Sequelize.DATE
-			}
+				type: Sequelize.DATE,
+			},
 		});
 	},
 	down: function(queryInterface, Sequelize) {

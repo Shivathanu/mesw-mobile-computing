@@ -3,65 +3,55 @@
  */
 module.exports = function(sequelize, DataTypes) {
 	var Route = sequelize.define(
-		"route",
+		"Route",
 		{
 			id: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
 				primaryKey: true,
-				autoIncrement: true
-			},
-			ticketId: {
-				type: DataTypes.STRING,
-				allowNull: false
+				autoIncrement: true,
 			},
 			departureStation: {
 				type: DataTypes.STRING,
-				allowNull: false
+				allowNull: false,
+				field: "departure_station",
 			},
 			departureTime: {
 				type: DataTypes.STRING,
-				allowNull: false
+				allowNull: false,
+				field: "departure_time",
 			},
 			arrivalStation: {
 				type: DataTypes.STRING(80),
-				allowNull: false
+				allowNull: false,
+				field: "arrival_station",
 			},
 			arrivalTime: {
 				type: DataTypes.STRING(255),
-				allowNull: false
+				allowNull: false,
+				field: "arrival_time",
 			},
 			distanceKm: {
 				type: DataTypes.STRING(9),
-				allowNull: true
+				allowNull: true,
+				field: "distance",
 			},
 			stopDurationMin: {
 				type: DataTypes.DATE,
 				allowNull: false,
-				defaultValue: DataTypes.NOW
+				defaultValue: DataTypes.NOW,
+				field: "stop_duration_min",
 			},
 			price: {
 				type: DataTypes.STRING,
-				allowNull: true
+				allowNull: true,
+				field: "price",
 			},
-			createdTime: {
-				type: DataTypes.DATE,
-				allowNull: false,
-				defaultValue: DataTypes.NOW
-			},
-			updateTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			},
-			deleteTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			}
 		},
 		{
 			freezeTableName: true,
 			tableName: "route",
-			timestamps: false
+			timestamps: false,
 		}
 	);
 

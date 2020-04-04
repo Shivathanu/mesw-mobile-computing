@@ -18,19 +18,6 @@ module.exports = function(sequelize, DataTypes) {
 			maxCapacity: {
 				type: DataTypes.INTEGER,
 				allowNull: false
-			},
-			createTime: {
-				type: DataTypes.DATE,
-				allowNull: false,
-				defaultValue: DataTypes.NOW
-			},
-			updateTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			},
-			deleteTime: {
-				type: DataTypes.DATE,
-				allowNull: true
 			}
 		},
 		{

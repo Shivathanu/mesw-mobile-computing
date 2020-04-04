@@ -1,26 +1,25 @@
 var models = require("../../database/models/index");
-var userDao = {};
+var routeDao = {};
 
 /**
- * Data Access Object that performs the data fetch for one user in the system
+ * Data Access Object that performs the data fetch for one route in the system
  *
  * @param {Object} request
  * @param {Function} getOneCB
  */
-userDao.getOne = function (request, getOneCB) {
-	console.log('request: ', request.params.id);
-	models.User.findOne({
+routeDao.getOne = function (request, getOneCB) {
+	models.Route.findOne({
 		where: {
-			id: request.params.id
-		}
-	}).then(
-		function(user) {
-			return getOneCB(null, user);
+			id: request.params.id,
 		},
-		function(error) {
+	}).then(
+		function (route) {
+			return getOneCB(null, route);
+		},
+		function (error) {
 			return getOneCB({
 				error: error,
-				message: error.parent
+				message: error.parent,
 			});
 		}
 	);
@@ -32,8 +31,8 @@ userDao.getOne = function (request, getOneCB) {
  * @param {Object} request
  * @param {Function} getListCB
  */
-userDao.getList = function(request, getListCB) {
-    models.User.findAll({}).then(function(customers) {
+routeDao.getList = function(request, getListCB) {
+    models.Route.findAll({}).then(function(customers) {
         return getListCB(null, customers);
     }, function(error) {
         return getListCB({
@@ -43,4 +42,4 @@ userDao.getList = function(request, getListCB) {
     });
 };
 
-module.exports = userDao;
+module.exports = routeDao;

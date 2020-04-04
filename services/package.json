@@ -1,12 +1,19 @@
 {
-  "name": "railway-ticketing-service",
+  "name": "ticket-service",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "db:all": "yarn db:migrate:undo && yarn db:migrate && yarn db:seed",
+    "db:migrate": "set NODE_ENV=development&&yarn m:sequelize db:migrate",
+    "db:migrate:undo": "yarn m:sequelize db:migrate:undo:all",
+    "db:seed": "yarn m:sequelize db:seed:all",
+    "db:seed:undo": "yarn m:sequelize db:seed:undo:all",
+    "m:sequelize": "./node_modules/.bin/sequelize --config database/config.js --models-path database/models/ --migrations-path database/migrations/ --seeders-path database/seeders"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "config": "^3.3.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
@@ -17,8 +24,8 @@
     "morgan": "~1.9.0",
     "mysql2": "~1.5.2",
     "nodemon": "^2.0.2",
-    "sequelize": "^5.21.5",
+    "sequelize": "^4.37.6",
     "sequelize-cli": "^5.5.1",
-    "winston": "^3.2.1"
+    "winston": "^2.4.2"
   }
 }

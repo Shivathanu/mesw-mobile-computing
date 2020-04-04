@@ -1,66 +1,59 @@
+var models = require("../models");
+
 /**
  * User Model
  */
 module.exports = function(sequelize, DataTypes) {
 	var User = sequelize.define(
-		"users",
+		"User",
 		{
 			id: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
 				primaryKey: true,
-				autoIncrement: true
+				autoIncrement: true,
 			},
-			firstname: {
-				type: DataTypes.STRING(60),
-				allowNull: false
+			firstName: {
+				type: DataTypes.STRING,
+				allowNull: false,
+				field: "first_name",
 			},
-			lastname: {
-				type: DataTypes.STRING(60),
-				allowNull: false
+			lastName: {
+				type: DataTypes.STRING,
+				allowNull: false,
+				field: "last_name",
 			},
 			email: {
-				type: DataTypes.STRING(80),
-				allowNull: false
+				type: DataTypes.STRING,
+				allowNull: false,
+				field: "email",
 			},
 			password: {
-				type: DataTypes.STRING(255),
-				allowNull: false
+				type: DataTypes.STRING,
+				allowNull: false,
+				field: "password",
 			},
 			phone: {
-				type: DataTypes.STRING(9),
-				allowNull: true
+				type: DataTypes.STRING,
+				allowNull: true,
+				field: "phone",
 			},
-			createTime: {
-				type: DataTypes.DATE,
+			creditCard: {
+				type: DataTypes.INTEGER,
 				allowNull: false,
-				defaultValue: DataTypes.NOW
+				references: {
+					model: models.CreditCard,
+					key: "id",
+				},
+				field: 'credit_card'
 			},
-			updateTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			},
-			deleteTime: {
-				type: DataTypes.DATE,
-				allowNull: true
-			}
 		},
 		{
 			freezeTableName: true,
-			tableName: "users",
-			timestamps: false
+			tableName: "user",
+			timestamps: false,
 		}
 	);
-
-	models.User.hasMany(models.Ticket, {
-		foreignKey: "user_id",
-		as: "userId"
-	});
-
-	models.User.hasMany(models.CreditCard, {
-		foreignKey: "userId",
-		as: "userId"
-	});
 
 	return User;
 };

@@ -1,16 +1,16 @@
 [
     {
         "id": "1",
-        "firstName": "firstname 01",
-        "lastName": "lastname 01",
+        "first_name": "firstname 01",
+        "last_name": "lastname 01",
         "email": "firstname01.lastname01@email.com",
         "password": "hash01",
         "phone": "111111111"
     },
     {
         "id": "2",
-        "firstName": "firstname 01",
-        "lastName": "lastname 01",
+        "first_name": "firstname 01",
+        "last_name": "lastname 01",
         "email": "firstname01.lastname01@email.com",
         "password": "hash01",
         "phone": "111111111"

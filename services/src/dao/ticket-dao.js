@@ -1,26 +1,25 @@
 var models = require("../../database/models/index");
-var userDao = {};
+var ticketDao = {};
 
 /**
- * Data Access Object that performs the data fetch for one user in the system
+ * Data Access Object that performs the data fetch for one ticket in the system
  *
  * @param {Object} request
  * @param {Function} getOneCB
  */
-userDao.getOne = function (request, getOneCB) {
-	console.log('request: ', request.params.id);
-	models.User.findOne({
+ticketDao.getOne = function (request, getOneCB) {
+	models.Ticket.findOne({
 		where: {
-			id: request.params.id
-		}
-	}).then(
-		function(user) {
-			return getOneCB(null, user);
+			id: request.params.id,
 		},
-		function(error) {
+	}).then(
+		function (ticket) {
+			return getOneCB(null, ticket);
+		},
+		function (error) {
 			return getOneCB({
 				error: error,
-				message: error.parent
+				message: error.parent,
 			});
 		}
 	);
@@ -32,8 +31,8 @@ userDao.getOne = function (request, getOneCB) {
  * @param {Object} request
  * @param {Function} getListCB
  */
-userDao.getList = function(request, getListCB) {
-    models.User.findAll({}).then(function(customers) {
+ticketDao.getList = function(request, getListCB) {
+    models.Ticket.findAll({}).then(function(customers) {
         return getListCB(null, customers);
     }, function(error) {
         return getListCB({
@@ -43,4 +42,4 @@ userDao.getList = function(request, getListCB) {
     });
 };
 
-module.exports = userDao;
+module.exports = ticketDao;

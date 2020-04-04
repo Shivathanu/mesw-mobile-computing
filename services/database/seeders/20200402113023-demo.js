@@ -1,13 +1,13 @@
-import creditCardData from "../fixtures/credit-card-data.json";
-import ticketData from "../fixtures/ticket-data.json";
-import timeTableData from "../fixtures/time-table-data.json";
-import trainData from "../fixtures/train-data.json";
-import routeData from "../fixtures/route-data";
-import stationData from "../fixtures/station-data.json";
-import usersData from "../fixtures/user-data.json";
+const creditCardData = require("../fixtures/credit-card-data.json");
+const ticketData = require("../fixtures/ticket-data.json");
+const timeTableData = require("../fixtures/time-table-data.json");
+const trainData = require("../fixtures/train-data.json");
+const routeData = require("../fixtures/route-data");
+const stationData = require("../fixtures/station-data.json");
+const usersData = require("../fixtures/users-data.json");
 
 
-export default {
+module.exports = {
 	up: async queryInterface => {
 		await queryInterface.bulkInsert("credit_card", creditCardData);
 		await queryInterface.bulkInsert("route", routeData);
@@ -15,7 +15,7 @@ export default {
 		await queryInterface.bulkInsert("time_table", timeTableData);
 		await queryInterface.bulkInsert("ticket", ticketData);
 		await queryInterface.bulkInsert("train", trainData);
-		await queryInterface.bulkInsert("users", usersData);
+		await queryInterface.bulkInsert("user", usersData);
 	},
 
 	down: async queryInterface => {
@@ -25,6 +25,6 @@ export default {
 		await queryInterface.bulkDelete("time_table", timeTableData);
 		await queryInterface.bulkDelete("ticket", ticketData);
 		await queryInterface.bulkDelete("train", trainData);
-		await queryInterface.bulkDelete("users", usersData);
+		await queryInterface.bulkDelete("user", usersData);
 	}
 };

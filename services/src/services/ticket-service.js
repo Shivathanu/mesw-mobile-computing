@@ -1,5 +1,5 @@
-var userDao = require("../dao/user-dao");
-var userService = {};
+var ticketDao = require("../dao/ticket-dao");
+var ticketService = {};
 
 /**
  * Service layer to call the Data Access Object (DAO) for database operations
@@ -7,8 +7,8 @@ var userService = {};
  * @param {Object} request
  * @param {Function} getOneCB
  */
-userService.getOne = function(request, getOneCB) {
-	userDao.getOne(request, function(error, result) {
+ticketService.getOne = function(request, getOneCB) {
+	ticketDao.getOne(request, function(error, result) {
 		if (error) {
 			return getOneCB(error);
 		}
@@ -22,8 +22,8 @@ userService.getOne = function(request, getOneCB) {
  * @param {Object} request
  * @param {Function} getListCB
  */
-userService.getList = function (request, getListCB) {
-	userDao.getList(request, function (error, result) {
+ticketService.getList = function (request, getListCB) {
+	ticketDao.getList(request, function (error, result) {
 		if (error) {
 			return getListCB(error);
 		}
@@ -31,4 +31,4 @@ userService.getList = function (request, getListCB) {
 	});
 };
 
-module.exports = userService;
+module.exports = ticketService;
